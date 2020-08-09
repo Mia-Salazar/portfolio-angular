@@ -1,0 +1,28 @@
+<nav class="nav">
+	<button class="hamburguer" type="button" data-toggle="collapse" data-target="#navbar"
+		aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation"
+		(click)="openMenu()" [ngClass]="{'hamburguer--is-open' : toggle}"
+	>
+		<span class="hamburguer__item" 
+			[ngClass]="{'hamburguer__item--is-open' : toggle}"
+			*ngFor="let number of [0,1,2]"
+		></span>
+	</button>
+	
+	<div class="nav__container" id="navbar" [ngClass]="{'nav__container--is-open' : toggle}">
+		<ul class="nav__link-list">
+			<li class="nav__link-container" (click)="openMenu()" routerLinkActive="nav__link-container--is-active">
+				<a class="nav__link" [routerLink]="['/superpower']" >Mis superpoderes</a>
+			</li>
+			<li class="nav__link-container" (click)="openMenu()" routerLinkActive="nav__link-container--is-active">
+				<a class="nav__link" [routerLink]="['/portfolio']" >Portfolio</a>
+			</li>
+			<li class="nav__link-container" (click)="openMenu()" routerLinkActive="nav__link-container--is-active">
+				<a class="nav__link" [routerLink]="['/awards']" >Premios & artículos</a>
+			</li>
+			<li class="nav__link-container" (click)="openMenu()" routerLinkActive="nav__link-container--is-active">
+				<a class="nav__link" [routerLink]="['/contact']" >Contacto</a>
+			</li>
+		</ul>
+	</div>
+</nav>

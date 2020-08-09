@@ -1,0 +1,111 @@
+@import '../../src/assets/stylesheets/application';
+
+.main-wrapper {
+	position: relative;
+	background-attachment: fixed;
+	background-position: left 10%;
+	background-color: $white;
+	border-right: 10px solid $black;
+	border-left: 10px solid $black;
+	background-image: url('../../src/assets/images/dot.png');
+	font-display: auto;
+	font-family: 'Merriweather', sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	z-index: $z-index3;
+
+	@media (min-width: 768px) {
+		border-left: 18px solid $black;
+		border-right: 18px solid $black;
+	}
+
+	&:after, &:before {
+		content: '';
+		position: fixed;
+		left: 0;
+		right: 0;
+		height: 12px;
+		background: $black;
+		z-index: $z-index3;
+
+		@media (min-width: 768px) {
+			height: 20px;
+		}
+	}
+
+	&__wrapper {
+		margin: 32px auto;
+
+		@media (min-width: 768px) {
+			margin: 64px auto 32px auto;
+		}
+	}
+
+	h2 {
+		transform: rotate(-7deg);
+		width: fit-content;
+		padding: 0 12px;
+		background-color: $black;
+		color: $white;
+		font-size: 30px;
+		font-weight: bold;
+
+		@media (min-width: 768px) {
+			margin-bottom: 48px;
+			font-size: 40px;
+		}
+	}
+
+	p {
+		margin: 18px 0;
+		font-size: 24px;
+		line-height: 1.5;
+
+		@media (min-width: 768px) {
+			font-size: 28px;
+		}
+	}
+}
+
+.box {
+	position: relative;
+	width: 85%;
+	margin: 32px auto;
+	padding: 16px;
+	background-color: $white;
+	border: 6px solid $black;
+
+	&:before {
+		content: '';
+		display: block;
+		position: absolute;
+		transform: rotate(40deg);
+		top: -32px;
+		left: 0;
+		width: 32px;
+		height: 112px;
+		background-color: $pink;
+	}
+
+	&:after {
+		content: '';
+		display: block;
+		position: absolute;
+		transform: rotate(40deg);
+		bottom: -32px;
+		right: 0;
+		width: 32px;
+		height: 112px;
+		background-color: $pink;
+	}
+
+	@media (min-width: 768px) {
+		width: 80%;
+		margin: 64px auto 32px auto;
+		padding: 32px;
+	}
+	
+	@media (min-width: 1200px){
+		max-width: 912px;
+	}
+}
