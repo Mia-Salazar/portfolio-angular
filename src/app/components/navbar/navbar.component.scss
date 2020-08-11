@@ -6,6 +6,11 @@
 	right: 24px;
 	z-index: $z-index4;
 
+	@media (min-width: 768px) {
+		top: 32px;
+		right: 32px;
+	}
+
 	@media (min-width: 992px) {
 		position: unset;
 		width: 912px;

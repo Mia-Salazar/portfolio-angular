@@ -8,6 +8,10 @@ import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { SocialLinkComponent } from './components/social-link/social-link.component';
 import { ContactComponent } from './components/contact/contact.component';
+import { SuperpowerComponent } from './pages/superpower/superpower.component';
+import { PortfolioComponent } from './pages/portfolio/portfolio.component';
+import { AwardsComponent } from './pages/awards/awards.component';
+import { HomeComponent } from './pages/home/home.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +20,11 @@ import { ContactComponent } from './components/contact/contact.component';
     HeaderComponent,
     FooterComponent,
     SocialLinkComponent,
-    ContactComponent
+    ContactComponent,
+    SuperpowerComponent,
+    PortfolioComponent,
+    AwardsComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
