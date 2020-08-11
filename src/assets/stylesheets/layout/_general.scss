@@ -6,10 +6,6 @@ a {
   text-decoration: none;
 } 
 
-* {
-  box-sizing: border-box;
-}
-
 @keyframes shaking {
   0% {
     transform: rotate(-10deg);
@@ -30,4 +26,10 @@ a {
   100% {
     transform: rotate(-10deg);
   }
+}
+
+@font-face {
+  font-family: 'Iconomoon';
+  font-style: normal;
+  src: url('/font/iconomoon/fonts/iconomoon.woff') format('woff');
 }

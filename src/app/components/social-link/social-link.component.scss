@@ -1,0 +1,19 @@
+@import '../../../assets/stylesheets/application';
+
+.social-item {
+	&__icon{
+		color:  $white;
+		font-size: 26px;
+		transition: 600ms;
+
+		&:hover {
+			color: $pink;
+			font-size: 32px;
+			transform: rotate(-30deg)
+		}
+	}
+
+  &__link {
+    margin-right: 20px;
+  }
+}

@@ -1,0 +1,22 @@
+<footer class="footer">
+	<div class="footer__top">
+		<div class="footer__left">
+			<div class="footer__bubbles">
+				<div class="footer__bubble">
+					<p class="footer__bubble-text">¡Sígueme!</p>
+				</div>
+				<div class="footer__bubble-shadow"></div>
+			</div>
+			<ul class="footer__social">
+				<app-social-link *ngFor="let social of socials; let i = index" [social]="social" [index]="i"></app-social-link>
+			</ul>
+		</div>
+		<div class="footer__contact">
+			<app-contact title="¿Qué me quieres contar?"></app-contact>
+		</div>
+	</div>
+	<div class="footer__bottom">
+		<p class="footer__text">© {{date | date: 'y'}} Mia Salazar</p>
+		<a href="mailto:maria.sgr@gmail.com " class="footer__text">maria.sgr@gmail.com</a>
+	</div>
+</footer>
