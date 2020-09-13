@@ -13,7 +13,7 @@ const routes: Routes = [
   {path: 'superpower', component: SuperpowerComponent},
   {path: 'awards', component: AwardsComponent},
   {path: 'routePath', component: HomeComponent},
-  {path: '**', pathMatch: 'full', redirectTo: ''}
+  {path: '**', pathMatch: 'full', redirectTo: 'home'}
 ];
 
 @NgModule({

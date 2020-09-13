@@ -1,1 +1,18 @@
-<p>home works!</p>
+<app-box class="home">
+    <app-heading text="¡Hola!"></app-heading>
+    <p class="text">Soy Mía Salazar, una desarrolladora Front-end developer junior, una apasionada de la maquetación web y una amante del diseño.</p>
+    <figure class="home__logo-container">
+        <img alt="" class="home__img" src="../../../assets/images/Logo-Mia.svg" />
+    </figure>
+    <p class="text">Sin embargo, todo esto es una tapadera, ya que en realidad soy la superheroína Miss !important, la persona que lucha contra los !importants y vela por el buen uso del CSS en el mundo y por el código bien optimiado y reutilizable.</p>
+    <p class="text">Ayúdame a combatir el mal código</p>
+    <button class="home__button" (click)="attack()" >¡Ataca!</button>
+    <app-bar [number]="number"></app-bar>
+    <p *ngIf="number < 1">¡Gracias por ayudarme!</p>
+    <figure class="home__dinosaur-container" [ngClass]="{'home__dinosaur-container--defeat': number < 1}" [@changeDivSize]=currentState>
+        <img alt="" src="../../../assets/images/dinosaur-important.png" class="home__dinosaur home__img" />
+    </figure>
+    <figure class="home__img-container">
+        <img alt="" src="../../../assets/images/skyline.png" class="home__img" />
+    </figure>
+</app-box>

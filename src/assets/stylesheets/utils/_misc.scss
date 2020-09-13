@@ -2,25 +2,37 @@
 USEFUL CLASSES
 ************/
 
-/************
-COLORS
-************/
+/*COLORS*/
 
 $gray: #252323;
 $black: #000;
 $white: #fff;
 $pink: #CF3476;
 $pink-dark: #4F2B3B;
+$pink-light: #FF59A1;
 
 /*White background*/
 $gray-accesibility: rgb(89, 89, 89);
 
-/************
-Z-INDEX
-************/
+/*Z-INDEX*/
 $z-index0: 0;
 $z-index1: 1;
 $z-index2: 5;
 $z-index3: 10;
 $z-index4: 15;
 $z-index5: 20;
+
+/*MIXINS*/
+@mixin button {
+    padding: 10px 16px;
+    background-color: $pink;
+    color: $white;
+    font-weight: bold;
+    appearance: none;
+    border: none;
+}
+
+@mixin buttonBlack {
+    @include button;
+    background-color: $black;
+}

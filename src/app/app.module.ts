@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -12,6 +13,10 @@ import { SuperpowerComponent } from './pages/superpower/superpower.component';
 import { PortfolioComponent } from './pages/portfolio/portfolio.component';
 import { AwardsComponent } from './pages/awards/awards.component';
 import { HomeComponent } from './pages/home/home.component';
+import { BoxComponent } from './components/box/box.component';
+import { HeadingComponent } from './components/heading/heading.component';
+import { BarComponent } from './components/bar/bar.component';
+import { NavComponent } from './components/nav/nav.component';
 
 @NgModule({
   declarations: [
@@ -24,11 +29,16 @@ import { HomeComponent } from './pages/home/home.component';
     SuperpowerComponent,
     PortfolioComponent,
     AwardsComponent,
-    HomeComponent
+    HomeComponent,
+    BoxComponent,
+    HeadingComponent,
+    BarComponent,
+    NavComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

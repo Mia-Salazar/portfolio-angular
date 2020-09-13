@@ -9,13 +9,6 @@
 		margin-top: 128px;
 	}
 
-	&:hover {
-		.footer__bubble, .footer__bubble-shadow, .contact__button {
-			animation-name: shaking;
-			animation-duration: 1s;
-		}
-	}
-
 	&::before {
 		content: '';
 		width: 100%;

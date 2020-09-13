@@ -1,0 +1,44 @@
+@import '../../../assets/stylesheets/application';
+
+.box {
+	position: relative;
+	width: 85%;
+	margin: 32px auto;
+	padding: 16px;
+	background-color: $white;
+	border: 6px solid $black;
+
+	&:before {
+		content: '';
+		display: block;
+		position: absolute;
+		transform: rotate(40deg);
+		top: -32px;
+		left: 0;
+		width: 32px;
+		height: 112px;
+		background-color: $pink;
+	}
+
+	&:after {
+		content: '';
+		display: block;
+		position: absolute;
+		transform: rotate(40deg);
+		bottom: -32px;
+		right: 0;
+		width: 32px;
+		height: 112px;
+		background-color: $pink;
+	}
+
+	@media (min-width: 768px) {
+		width: 80%;
+		margin: 64px auto 32px auto;
+		padding: 32px;
+	}
+	
+	@media (min-width: 1200px){
+		max-width: 912px;
+	}
+}
