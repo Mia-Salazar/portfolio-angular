@@ -1,6 +1,8 @@
 <div class="bar">
     <h3 class="bar__title">{{title}}</h3>
-    <span class="bar__item-bar" [ngStyle]="{'width.%': number}"
+    <div class="bar__item">
+        <span class="bar__results" [ngStyle]="{'width.%': number}"
         [ngClass]="{
-        'bar__item-bar--outside': number < 15 && number > 1, 'bar__item-bar--defeat': number == 0}">{{number}}%</span>
+        'bar__results--outside': number < 15 && number > 1, 'bar__results--defeat': number == 0}">{{number}}%</span>
+    </div>
 </div>

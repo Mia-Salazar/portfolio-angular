@@ -1,0 +1,119 @@
+@import '../../../assets/stylesheets/application';
+
+.superpower {
+  &__list {
+    width: 100%;
+
+    @media (min-width: 768px) {
+      width: 50%;
+    }
+  }
+
+  &__wrapper {
+    margin-bottom: 48px;
+  }
+
+  &__weakness {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+    font-size: 24px;
+    line-height: 1.5;
+
+    &:before {
+      position: absolute;
+      top: 12px;
+      left: -20px;
+      display: block;
+      content: '';
+      height: 12px;
+      width: 12px;
+      background-color: $pink;
+    }
+  }
+
+  &__weakness-info {
+    display: none;
+
+    &--is-open {
+      display: block;
+      position: absolute;
+      top: 48px;
+      padding: 8px;
+      font-size: 16px;
+      border: 3px solid $black;
+      background-color: $white;
+      -webkit-box-shadow: -6.4px 6.4px 0 0 rgba(207, 52, 118, 1);
+      -moz-box-shadow: -6.4px 6.4px 0 0 rgba(207, 52, 118, 1);
+      box-shadow: -6.4px 6.4px 0 0 rgba(207, 52, 118, 1);
+      z-index: $z-index1;
+
+      &:before {
+        content: '';
+        position: absolute;
+        top: -24px;
+        left: 90px;
+        border-left: 12px solid transparent;
+        border-right: 12px solid transparent;
+        border-bottom: 24px solid $black;
+      }
+    }
+  }
+
+  &__interrogation {
+    position: relative;
+    margin-left: 4px;
+    padding: 4px 8px 2.4px 8px;
+    color: $white;
+    background-color: $black;
+    font-size: 12px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+
+  &__wrapper {
+    @media (min-width: 768px) {
+      display: flex;
+      align-items: center;
+    }
+  }
+
+  &__img-container {
+    display: none;
+
+    @media (min-width: 768px) {
+      width: 50%;
+      display: block;
+    }
+  }
+
+  &__img {
+    width: 80%;
+    display: flex;
+    margin-left: auto;
+  }
+
+  &__laugh-container {
+    display: none;
+
+    @media (min-width: 768px) {
+      width: 60%;
+      display: flex;
+    }
+  }
+
+  &__laugh {
+    width: 100%;
+  }
+
+  &__weakness-list {
+    @media (min-width: 768px) {
+      width: 40%;
+    }
+  }
+
+  &__link {
+    color: $pink;
+  }
+}
