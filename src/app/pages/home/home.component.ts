@@ -1,6 +1,13 @@
 import { Component, OnInit } from '@angular/core';
 import { trigger, state, style, transition, animate } from '@angular/animations';
 
+import { Store } from '@ngrx/store';
+import { Action } from '@ngrx/store';
+
+interface FightState {
+  count: number
+}
+
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
@@ -21,29 +28,37 @@ import { trigger, state, style, transition, animate } from '@angular/animations'
   ]
 })
 export class HomeComponent implements OnInit {
-  number = 100
+  count = 100
 
-  constructor() { }
+  constructor(private store: Store<FightState>) {
+    this.store.subscribe(state => this.count = state.count
+    )
+  }
 
   ngOnInit(): void {
   }
 
-  attack(){
-    if (this.number > 0) {
-      let damage = Math.floor(Math.random() * 25);
-      this.number = this.number - damage
+  attackReducer(){
+    const actionAttack: Action = {
+      type: 'ATTACK'
     }
 
-    if (this.number < 0) {
-      this.number = 0
+    const actionDefeat: Action = {
+      type: 'DEFEAT'
+    }
+
+    if (this.count > 0) {
+      this.store.dispatch(actionAttack)
+    }
+
+    if (this.count < 0) {
+      this.store.dispatch(actionDefeat)
     }
 
     this.currentState = this.currentState === 'initial' ? 'final' : 'initial';
   }
 
-
   //Animation
-
   currentState = 'initial';
   listItem = [];
   list_order: number = 1;
@@ -53,6 +68,7 @@ export class HomeComponent implements OnInit {
     this.list_order++;
     this.listItem.push(listitem);
   }
+
   removeItem() {
     this.listItem.length -= 1;
   }

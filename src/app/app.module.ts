@@ -18,6 +18,9 @@ import { HeadingComponent } from './components/heading/heading.component';
 import { BarComponent } from './components/bar/bar.component';
 import { NavComponent } from './components/nav/nav.component';
 
+import { StoreModule } from '@ngrx/store';
+import { FightReducer } from './pages/home/fight.reducer';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -38,7 +41,8 @@ import { NavComponent } from './components/nav/nav.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    StoreModule.forRoot({count: FightReducer})
   ],
   providers: [],
   bootstrap: [AppComponent]
