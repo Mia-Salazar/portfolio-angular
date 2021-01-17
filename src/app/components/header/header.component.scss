@@ -96,4 +96,33 @@
     position: relative;
     z-index: 2;
   }
+
+  &__language-group {
+    width: fit-content;
+    position: absolute;
+    top: 24px;
+    left: 12px;
+    display: flex;
+    border: 4px solid $pink;
+    border-radius: 4px;
+    z-index: $z-index1;
+
+    @media (min-width: 768px) {
+      top: 32px;
+      left: 16px;
+    }
+  }
+
+  &__language-button {
+    padding: 4px 8px;
+    color: $black;
+    background-color: $white;
+    border: none;
+    appearance: none;
+
+    &--active {
+      color: $white;
+      background-color: $pink;
+    }
+  }
 }
