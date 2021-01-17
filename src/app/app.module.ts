@@ -1,6 +1,9 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
+import { TranslateHttpLoader } from '@ngx-translate/http-loader';
+import { HttpClient, HttpClientModule } from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -16,7 +19,6 @@ import { HomeComponent } from './pages/home/home.component';
 import { BoxComponent } from './components/box/box.component';
 import { HeadingComponent } from './components/heading/heading.component';
 import { BarComponent } from './components/bar/bar.component';
-import { NavComponent } from './components/nav/nav.component';
 
 @NgModule({
   declarations: [
@@ -33,14 +35,25 @@ import { NavComponent } from './components/nav/nav.component';
     BoxComponent,
     HeadingComponent,
     BarComponent,
-    NavComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    BrowserAnimationsModule
+    HttpClientModule,
+    BrowserAnimationsModule,
+    TranslateModule.forRoot({
+      loader: {
+        provide: TranslateLoader,
+        useFactory: HttpLoaderFactory,
+        deps: [HttpClient]
+      }
+    })
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
+
+export function HttpLoaderFactory(http: HttpClient) {
+  return new TranslateHttpLoader(http);
+}

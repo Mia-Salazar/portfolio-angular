@@ -12,16 +12,16 @@
 	<div class="nav__container" id="navbar" [ngClass]="{'nav__container--is-open' : toggle}">
 		<ul class="nav__link-list">
 			<li class="nav__link-container" (click)="openMenu()" routerLinkActive="nav__link-container--is-active">
-				<a class="nav__link" [routerLink]="['/superpower']" >Mis superpoderes</a>
+				<a class="nav__link" [routerLink]="['/superpower']" >{{ 'header.superpower' | translate }}</a>
 			</li>
 			<li class="nav__link-container" (click)="openMenu()" routerLinkActive="nav__link-container--is-active">
-				<a class="nav__link" [routerLink]="['/portfolio']" >Portfolio</a>
+				<a class="nav__link" [routerLink]="['/portfolio']" >{{ 'header.portfolio' | translate }}</a>
 			</li>
 			<li class="nav__link-container" (click)="openMenu()" routerLinkActive="nav__link-container--is-active">
-				<a class="nav__link" [routerLink]="['/awards']" >Premios & artículos</a>
+				<a class="nav__link" [routerLink]="['/awards']" >{{ 'header.awards' | translate }}</a>
 			</li>
 			<li class="nav__link-container" (click)="openMenu()" routerLinkActive="nav__link-container--is-active">
-				<a class="nav__link" [routerLink]="['/contact']" >Contacto</a>
+				<a class="nav__link" [routerLink]="['/contact']" >{{ 'header.contact' | translate }}</a>
 			</li>
 		</ul>
 	</div>

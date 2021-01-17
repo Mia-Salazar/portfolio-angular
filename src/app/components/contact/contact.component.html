@@ -1,31 +1,31 @@
 <div class="contact">
-    <h3 class="contact__title">{{title}}</h3>
+    <h3 class="contact__title">{{title | translate}}</h3>
     <form class="contact__form" action="https://formspree.io/maria.sgr@gmail.com" method="POST">
-        <label class="contact__label" for="name" *ngIf="name">¿Quién eres?</label>
+        <label class="contact__label" for="name" *ngIf="name">{{ 'contact.who' | translate }}</label>
         <input
             id="name"
-            placeholder="Escribe tu nombre"
+            [placeholder]="'contact.name' | translate"
             class="contact__text"
             type="name"
             *ngIf="name"
         >
-        <label class="contact__label" for="mail">¿Quién eres?</label>
+        <label class="contact__label" for="mail">{{ 'contact.who' | translate }}</label>
         <input
             id="mail"
-            placeholder="Escribe tu mail"
+            [placeholder]="'contact.email' | translate"
             class="contact__text"
             type="email"
             name="_replyto"
             required
         >
-        <label class="contact__label" for="textarea">¿Qué me quieres contar?</label>
+        <label class="contact__label" for="textarea">{{ 'contact.what' | translate }}?</label>
         <textarea
             id="textarea"
             class="contact__textarea"
             name="message"
-            placeholder="Dime cosas bonitas"
+            [placeholder]="'contact.tell' | translate"
             required
         ></textarea>
-        <input class="contact__button" type="submit" value="Enviar">
+        <input class="contact__button" type="submit" [value]="'contact.send' | translate">
     </form>
 </div>

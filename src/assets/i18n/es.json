@@ -1,0 +1,42 @@
+{
+    "home": {
+        "hello": "¡Hola!",
+        "subtitle": "Soy Mía Salazar, una desarrolladora Front-end developer junior, una apasionada de la maquetación web y una amante del diseño.",
+        "textOne": "Sin embargo, todo esto es una tapadera, ya que en realidad soy la superheroína Miss !important, la persona que lucha contra los !importants y vela por el buen uso del CSS en el mundo y por el código bien optimiado y reutilizable.",
+        "textTwo": "Ayúdame a combatir el mal código.",
+        "attack": "¡Ataca!",
+        "thanks": "¡Gracias por ayudarme!"
+    },
+    "contact": {
+        "who": "¿Quién eres?",
+        "name": "Escribe tu nombre",
+        "email": "Escribe tu mail",
+        "what": "¿Qué me quieres contar?",
+        "tell": "Dime cosas bonitas",
+        "send": "Enviar"
+    },
+    "footer": {
+        "follow": "¡Sígueme!",
+        "social": "Sígueme en redes sociales"
+    },
+    "header": {
+        "back": "Vuelve a la home",
+        "superpower": "Mis superpoderes",
+        "portfolio": "Portfolio",
+        "awards": "Premios & artículos",
+        "contact": "Contacto"
+    },
+    "superpower": {
+        "title": "Superpoderes",
+        "subtitle": "Entre mi larga lista de superpoderes están estos lenguajes, tecnologías y skills:",
+        "textOne": "En mis valores como superhéroe también puedo destacar la Metodología BEM, la Metodología Ágil, el Mobile First y la adoración a Flexbox y a CSS Grid Layout.",
+        "textTwo": "Como todo buen superhéroe, también tengo algunas debilidades.",
+        "cookies": "Las galletas.",
+        "sofas": "Los sofás.",
+        "summer": "El verano.",
+        "korea": "Corea.",
+        "bubble": "¿Sabías que soy una de las mayores expertas en propaganda en Corea del Sur y Corea del Norte?",
+        "tell": "Cuéntame más",
+        "alt": "Decoración tipo comic"
+    }
+}

@@ -1,45 +1,45 @@
 <app-box class="home">
     <div class="animation-page">
-        <app-heading text="Superpoderes"></app-heading>
-        <p class="text">Entre mi larga lista de superpoderes están estos lenguajes, tecnologías y skills:</p>
+        <app-heading text="superpower.title"></app-heading>
+        <p class="text">{{ 'superpower.subtitle' | translate }}</p>
         <div class="superpower__wrapper">
             <div class="superpower__list">
                 <app-bar title="HTML5" [number]="valueBar(100)"></app-bar>
                 <app-bar title="CSS3, SCSS, SASS" [number]="valueBar(95)"></app-bar>
-                <app-bar title="Accesibilidad" [number]="valueBar(70)"></app-bar>
+                <app-bar title="Accesibilidad" [number]="valueBar(75)"></app-bar>
                 <app-bar title="Responsive Web Design" [number]="valueBar(95)"></app-bar>
-                <app-bar title="Javascript & jQuery" [number]="valueBar(50)"></app-bar>
-                <app-bar title="Vue, React, Angular" [number]="valueBar(60)"></app-bar>
+                <app-bar title="Javascript & jQuery" [number]="valueBar(70)"></app-bar>
+                <app-bar title="Vue, React, Angular" [number]="valueBar(70)"></app-bar>
                 <app-bar title="Bootstrap 4, Materialize, Bulma, Angular Material, Tailwind" [number]="valueBar(70)"></app-bar>
                 <app-bar title="Sketch, Photoshop, Illustrator" [number]="valueBar(80)"></app-bar>
                 <app-bar title="Git, github, bitbucket" [number]="valueBar(80)"></app-bar>
             </div>
             <figure class="superpower__img-container">
-              <img class="superpower__img" alt="Decoración tipo comic" src="../../../assets/images/gun.svg" />
+              <img class="superpower__img" [alt]="'superpower.alt' | translate" src="../../../assets/images/gun.svg" />
             </figure>
         </div>
-        <p class="text">En mis valores como superhéroe también puedo destacar la Metodología BEM, la Metodología Ágil, el Mobile First y la adoración a Flexbox y a CSS Grid Layout.</p>
+        <p class="text">{{ 'superpower.textOne' | translate }}</p>
         <app-heading text="Mi kriptonita"></app-heading>
-        <p class="text">Como todo buen superhéroe, también tengo algunas debilidades.</p>
+        <p class="text">{{ 'superpower.textTwo' | translate }}</p>
         <div class="superpower__wrapper">
             <ul class="superpower__weakness-list">
-                <li class="superpower__weakness superpower__weakness--choco">Las galletas.</li>
-                <li class="superpower__weakness superpower__weakness--sofa">Los sofás.</li>
-                <li class="superpower__weakness superpower__weakness--summer">El verano.</li>
+                <li class="superpower__weakness superpower__weakness--choco">{{ 'superpower.cookies' | translate }}</li>
+                <li class="superpower__weakness superpower__weakness--sofa">{{ 'superpower.sofas' | translate }}</li>
+                <li class="superpower__weakness superpower__weakness--summer">{{ 'superpower.summer' | translate }}</li>
                 <li class="superpower__weakness superpower__weakness--tay">Taylor Swift.</li>
                 <li class="superpower__weakness superpower__weakness-propaganda">
-                    Corea.
+                    {{ 'superpower.korea' | translate }}
                     <span v-click-outside="hide" class="superpower__interrogation" (click)="weaknessOpen = !weaknessOpen">what?</span>
                     <span
                     class="superpower__weakness-info"  [ngClass]="{'superpower__weakness-info--is-open': weaknessOpen}"
                     >
-                    ¿Sabías que soy una de las mayores expertas en propaganda en Corea del Sur y Corea del Norte?
-                    <article class="superpower__link" [routerLink]="['/awards']" >Cuéntame más</article>
+                    {{ 'superpower.bubble' | translate }}
+                    <article class="superpower__link" [routerLink]="['/awards']" >{{ 'superpower.tell' | translate }}</article>
                     </span>
                 </li>
             </ul>
             <figure class="superpower__laugh-container">
-                <img class="superpower__laugh" alt="Decoración tipo comic" src="../../../assets/images/bang.svg" />
+                <img class="superpower__laugh" [alt]="'superpower.alt' | translate" src="../../../assets/images/bang.svg" />
             </figure>
         </div>
     </div>

@@ -1,0 +1,42 @@
+{
+    "home": {
+        "hello": "Hello!",
+        "subtitle": "I am Mía Salazar, a Junior Front-end developer, passionate about web layout and a design lover.",
+        "textOne": "However, all this is a cover, since in reality I am the superhero Miss! Important, the person who fights against the! Importants and watches over the good use of CSS in the world and the well optimized and reusable code.",
+        "textTwo": "Help me fight bad code.",
+        "attack": "Attack!",
+        "thanks": "Thanks for helping!"
+    },
+    "contact": {
+        "who": "Who are you?",
+        "name": "Write your name",
+        "email": "Write your email",
+        "what": "What do you want to tell me?",
+        "tell": "Tell me nice things",
+        "send": "Send"
+    },
+    "footer": {
+        "follow": "Follow me!",
+        "social": "Follow me on social network"
+    },
+    "header": {
+        "back": "Go back to home",
+        "superpower": "My superpowers",
+        "portfolio": "Portfolio",
+        "awards": "Awards & articles",
+        "contact": "Contact"
+    },
+    "superpower": {
+        "title": "Superpowers",
+        "subtitle": "Among my long list of superpowers are these languages, technologies and skills:",
+        "textOne": "In my values as a superhero I can also highlight the BEM Methodology, the Agile Methodology, the Mobile First and using of Flexbox and CSS Grid Layout.",
+        "textTwo": "Like any good superhero, I also have some weaknesses.",
+        "cookies": "Cookies.",
+        "sofas": "Sofas.",
+        "summer": "Summer.",
+        "korea": "Korea.",
+        "bubble": "Did you know that I am one of the greatest experts in propaganda in South Korea and North Korea?",
+        "tell": "Tell me more",
+        "alt": "Comic style decoration"
+    }
+}
