@@ -38,5 +38,9 @@
         "bubble": "Did you know that I am one of the greatest experts in propaganda in South Korea and North Korea?",
         "tell": "Tell me more",
         "alt": "Comic style decoration"
+    },
+    "error": {
+        "title": "Page not found",
+        "subtitle": "It looks like Miss !important is not here right now, shes is saving the world"
     }
 }

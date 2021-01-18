@@ -1,0 +1,30 @@
+@import '../../../assets/stylesheets/application';
+
+.error {
+    &__logo-container {
+		@media (min-width: 768px) {
+			width: 80%;
+			margin: auto;
+		}
+
+		@media (min-width: 992px) {
+			width: 50%;
+		}
+
+		@media (min-width: 1440px) {
+			width: 30%;
+		}
+	}
+
+	&__button {
+		padding: 14px;
+	}
+
+	.text {
+		margin-bottom: 42px;
+	}
+
+	.animation-page {
+		margin-bottom: 32px;
+	}
+}

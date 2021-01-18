@@ -1,0 +1,16 @@
+@import '../utils/misc';
+
+.button-primary {
+    margin-top: 3px;
+    margin-bottom: 8px;
+    padding: 14px 0;
+    background-color: $pink;
+    color: $white;
+    font-weight: bold;
+    appearance: none;
+    border: none;
+
+    &:hover, &:active, &:focus {
+        background-color: $gray;
+    }
+}

@@ -19,6 +19,7 @@ import { HomeComponent } from './pages/home/home.component';
 import { BoxComponent } from './components/box/box.component';
 import { HeadingComponent } from './components/heading/heading.component';
 import { BarComponent } from './components/bar/bar.component';
+import { ErrorComponent } from './pages/error/error.component';
 
 @NgModule({
   declarations: [
@@ -35,6 +36,7 @@ import { BarComponent } from './components/bar/bar.component';
     BoxComponent,
     HeadingComponent,
     BarComponent,
+    ErrorComponent,
   ],
   imports: [
     BrowserModule,

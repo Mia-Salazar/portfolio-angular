@@ -3,7 +3,9 @@ MAIN STYLESHEET
 ************/
 
 @charset "utf-8";
-
-@import 'utils/_misc';
-@import 'layout/_general';
 @import 'layout/_normalize';
+
+@import 'layout/_general';
+@import 'layout/_components';
+@import 'utils/_misc';
+

@@ -38,5 +38,9 @@
         "bubble": "¿Sabías que soy una de las mayores expertas en propaganda en Corea del Sur y Corea del Norte?",
         "tell": "Cuéntame más",
         "alt": "Decoración tipo comic"
+    },
+    "error": {
+        "title": "Página no encontrada",
+        "subtitle": "Parece que Miss !Important no está en esta página ahora mismo, está salvando al mundo",
     }
 }
