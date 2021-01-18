@@ -8,6 +8,10 @@
         "thanks": "¡Gracias por ayudarme!"
     },
     "contact": {
+        "title": "Contáctame",
+        "subtitle": "Como superheroína siempre estoy salvando el mundo de aquí para allá, pero si conoces alguna injusticia por la que deba intervenir, no dudes en contactar conmigo.",
+        "justice": "La justicia, y el código bien hecho, nunca duermen.",
+        "how": "¿Cómo cambiamos el mundo hoy?",
         "who": "¿Quién eres?",
         "name": "Escribe tu nombre",
         "email": "Escribe tu mail",

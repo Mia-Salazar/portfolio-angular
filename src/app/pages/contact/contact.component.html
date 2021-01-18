@@ -1,1 +1,13 @@
-<p>contact works!</p>
+<app-box class="contact">
+    <div class="animation-page">
+        <app-heading text="contact.title"></app-heading>
+        <p class="text">{{ 'contact.subtitle' | translate }}</p>
+        <p class="text">{{ 'contact.justice' | translate }}</p>
+        <div class="contact__wrapper">
+            <app-contact-form title="contact.how"></app-contact-form>
+            <figure class="contact__img-container">
+                <img class="contact__img" src="../../../assets/images/signal.svg" alt="Bat-signal" />
+            </figure>
+        </div>
+    </div>
+</app-box>

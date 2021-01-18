@@ -13,7 +13,8 @@ import { NavbarComponent } from './components/navbar/navbar.component';
 import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { SocialLinkComponent } from './components/social-link/social-link.component';
-import { ContactComponent } from './components/contact/contact.component';
+import { ContactFormComponent } from './components/contact-form/contact-form.component';
+import { ContactComponent } from './pages/contact/contact.component';
 import { SuperpowerComponent } from './pages/superpower/superpower.component';
 import { PortfolioComponent } from './pages/portfolio/portfolio.component';
 import { AwardsComponent } from './pages/awards/awards.component';
@@ -30,6 +31,7 @@ import { ErrorComponent } from './pages/error/error.component';
     HeaderComponent,
     FooterComponent,
     SocialLinkComponent,
+    ContactFormComponent,
     ContactComponent,
     SuperpowerComponent,
     PortfolioComponent,

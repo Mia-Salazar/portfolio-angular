@@ -13,4 +13,8 @@
     &:hover, &:active, &:focus, &:disabled {
         background-color: $gray;
     }
+
+    &:disabled {
+        cursor: not-allowed;
+    }
 }

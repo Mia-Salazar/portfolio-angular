@@ -1,0 +1,49 @@
+<div class="contact-form">
+    <h3 class="contact-form__title">{{title | translate}}</h3>
+    <form class="contact-form__form" action="https://formspree.io/f/mwkwerqj" method="POST"
+    (ngSubmit)="submit(form, captcha)" #form="ngForm"
+    >
+        <label class="contact-form__label" for="name" *ngIf="name">{{ 'contact.who' | translate }}</label>
+        <input
+            id="name"
+            [placeholder]="'contact.name' | translate"
+            class="contact-form__text"
+            type="name"
+            name="name"
+            [(ngModel)]="nameInput"
+            *ngIf="name"
+        >
+        <label class="contact-form__label" for="mail">{{ 'contact.who' | translate }}</label>
+        <input
+            id="mail"
+            [placeholder]="'contact.email' | translate"
+            class="contact-form__text"
+            type="email"
+            name="_replyto"
+            [(ngModel)]="email"
+            required
+        >
+        <label class="contact-form__label" for="textarea">{{ 'contact.what' | translate }}?</label>
+        <textarea
+            id="textarea"
+            class="contact-form__textarea"
+            name="message"
+            [(ngModel)]="message"
+            [placeholder]="'contact.tell' | translate"
+            required
+        ></textarea>
+        <div class="contact-form__recaptcha">
+            <re-captcha
+            [(ngModel)]="recaptcha"
+            (resolved)="resolved($event)"
+            [siteKey]="getRecaptcha()"
+            name="recaptcha"
+            required
+            #captcha="ngModel"
+            ></re-captcha>
+        </div>
+        <small class="contact-form__error" *ngIf="error">{{ 'contact.error' | translate }}</small>
+        <input class="button-primary contact-form__button" *ngIf="!loading" [disabled]="!form.valid" type="submit" [value]="'contact.send' | translate">
+        <button class="button-primary contact-form__button" *ngIf="loading"><span class="contact-form__loading fas fa-redo-alt"></span></button>
+    </form>
+</div>

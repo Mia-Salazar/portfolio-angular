@@ -8,6 +8,10 @@
         "thanks": "Thanks for helping!"
     },
     "contact": {
+        "title": "Contact me",
+        "subtitle": "As a superhero, I am always saving the world from here to there, but if you know of any injustice that I must intervene in, please do not hesitate to contact me.",
+        "justice": "Justice, and code well done, never sleep.",
+        "how": "How do we change the world today?",
         "who": "Who are you?",
         "name": "Write your name",
         "email": "Write your email",
