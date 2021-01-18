@@ -13,7 +13,8 @@
         "email": "Write your email",
         "what": "What do you want to tell me?",
         "tell": "Tell me nice things",
-        "send": "Send"
+        "send": "Send",
+        "error": "Error"
     },
     "footer": {
         "follow": "Follow me!",

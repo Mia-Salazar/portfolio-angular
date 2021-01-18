@@ -1,12 +1,16 @@
 <div class="contact">
     <h3 class="contact__title">{{title | translate}}</h3>
-    <form class="contact__form" action="https://formspree.io/maria.sgr@gmail.com" method="POST">
+    <form class="contact__form" action="https://formspree.io/f/mwkwerqj" method="POST"
+    (ngSubmit)="submit(form, captcha)" #form="ngForm"
+    >
         <label class="contact__label" for="name" *ngIf="name">{{ 'contact.who' | translate }}</label>
         <input
             id="name"
             [placeholder]="'contact.name' | translate"
             class="contact__text"
             type="name"
+            name="name"
+            [(ngModel)]="nameInput"
             *ngIf="name"
         >
         <label class="contact__label" for="mail">{{ 'contact.who' | translate }}</label>
@@ -16,6 +20,7 @@
             class="contact__text"
             type="email"
             name="_replyto"
+            [(ngModel)]="email"
             required
         >
         <label class="contact__label" for="textarea">{{ 'contact.what' | translate }}?</label>
@@ -23,9 +28,20 @@
             id="textarea"
             class="contact__textarea"
             name="message"
+            [(ngModel)]="message"
             [placeholder]="'contact.tell' | translate"
             required
         ></textarea>
-        <input class="button-primary contact__button" type="submit" [value]="'contact.send' | translate">
+        <re-captcha
+            [(ngModel)]="recaptcha"
+            (resolved)="resolved($event)"
+            [siteKey]="getRecaptcha()"
+            required
+            name="recaptcha"
+            #captcha="ngModel"
+        ></re-captcha>
+        <small class="contact__error">{{ 'contact.error' | translate }}</small>
+        <input class="button-primary contact__button" *ngIf="!loading" [disabled]="!form.valid" type="submit" [value]="'contact.send' | translate">
+        <button class="button-primary contact__button" *ngIf="loading"><span class="contact__loading fas fa-redo-alt"></span></button>
     </form>
 </div>

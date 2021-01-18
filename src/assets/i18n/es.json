@@ -13,7 +13,8 @@
         "email": "Escribe tu mail",
         "what": "¿Qué me quieres contar?",
         "tell": "Dime cosas bonitas",
-        "send": "Enviar"
+        "send": "Enviar",
+        "error": "Error"
     },
     "footer": {
         "follow": "¡Sígueme!",

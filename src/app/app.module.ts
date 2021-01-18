@@ -4,6 +4,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
+import { RecaptchaModule, RecaptchaFormsModule } from 'ng-recaptcha';
+import { FormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -43,6 +45,9 @@ import { ErrorComponent } from './pages/error/error.component';
     AppRoutingModule,
     HttpClientModule,
     BrowserAnimationsModule,
+    RecaptchaModule,
+    FormsModule,
+    RecaptchaFormsModule,
     TranslateModule.forRoot({
       loader: {
         provide: TranslateLoader,

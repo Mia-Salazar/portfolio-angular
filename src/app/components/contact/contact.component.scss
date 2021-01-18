@@ -8,6 +8,12 @@
 
     &__button {
         width: 160px;
+        margin-top: 24px;
+    }
+
+    &__loading {
+        color: $white;
+        animation: roll 1s infinite;
     }
     
     &__title {
@@ -52,4 +58,12 @@
         visibility: 0;
     }
 
+    &__error {
+        margin-top: 24px;
+    }
+}
+
+@keyframes roll {
+    from {transform: rotate(0deg)}
+    to {transform: rotate(360deg)}
 }

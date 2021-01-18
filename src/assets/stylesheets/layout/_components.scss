@@ -10,7 +10,7 @@
     appearance: none;
     border: none;
 
-    &:hover, &:active, &:focus {
+    &:hover, &:active, &:focus, &:disabled {
         background-color: $gray;
     }
 }
