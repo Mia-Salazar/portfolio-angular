@@ -15,9 +15,15 @@ export class SuperpowerComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  valueBar(num){
+  valueBar(num: number){
     if (this.mobile || this.scroll) {
-      return num
+      return num;
+    }
+  }
+
+  showDetails() {
+    if (this.weaknessOpen) {
+      this.weaknessOpen = false;
     }
   }
 
@@ -31,5 +37,4 @@ export class SuperpowerComponent implements OnInit {
       }
     }   
   }
-
 }

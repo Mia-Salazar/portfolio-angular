@@ -29,12 +29,12 @@
                 <li class="superpower__weakness superpower__weakness--tay">Taylor Swift.</li>
                 <li class="superpower__weakness superpower__weakness-propaganda">
                     {{ 'superpower.korea' | translate }}
-                    <span v-click-outside="hide" class="superpower__interrogation" (click)="weaknessOpen = !weaknessOpen">what?</span>
+                    <span  class="superpower__interrogation" (clickOutside)="showDetails()" (click)="this.weaknessOpen = !this.weaknessOpen">what?</span>
                     <span
                     class="superpower__weakness-info"  [ngClass]="{'superpower__weakness-info--is-open': weaknessOpen}"
                     >
-                    {{ 'superpower.bubble' | translate }}
-                    <article class="superpower__link" [routerLink]="['/awards']" >{{ 'superpower.tell' | translate }}</article>
+                        {{ 'superpower.bubble' | translate }}
+                        <a class="superpower__link" [routerLink]="['/awards']" >{{ 'superpower.tell' | translate }}</a>
                     </span>
                 </li>
             </ul>

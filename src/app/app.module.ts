@@ -6,6 +6,7 @@ import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { RecaptchaModule, RecaptchaFormsModule } from 'ng-recaptcha';
 import { FormsModule } from '@angular/forms';
+import { ClickOutsideModule } from 'ng-click-outside';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -35,6 +36,7 @@ import { ComponentsModule } from './components/components.module';
     BrowserAnimationsModule,
     RecaptchaModule,
     FormsModule,
+    ClickOutsideModule,
     RecaptchaFormsModule,
     TranslateModule.forRoot({
       loader: {
