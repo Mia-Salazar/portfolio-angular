@@ -43,7 +43,7 @@
             ></re-captcha>
         </div>
         <small class="contact-form__error" *ngIf="error">{{ 'contact.error' | translate }}</small>
-        <input class="button-primary contact-form__button" *ngIf="!loading" [disabled]="!form.valid" type="submit" [value]="'contact.send' | translate">
-        <button class="button-primary contact-form__button" *ngIf="loading"><span class="contact-form__loading fas fa-redo-alt"></span></button>
+        <input class="button-primary contact-form__button" *ngIf="!load" [disabled]="!form.valid" type="submit" [value]="'contact.send' | translate">
+        <button class="button-primary contact-form__button" *ngIf="load"><span class="contact-form__loading fas fa-redo-alt"></span></button>
     </form>
 </div>

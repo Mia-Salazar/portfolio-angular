@@ -46,6 +46,15 @@
     },
     "error": {
         "title": "Página no encontrada",
-        "subtitle": "Parece que Miss !Important no está en esta página ahora mismo, está salvando al mundo",
+        "subtitle": "Parece que Miss !Important no está en esta página ahora mismo, está salvando al mundo"
+    },
+    "portfolio": {
+        "title": "Portfolio",
+        "subtitle": "A un superhéroe se le conoce más por sus acciones que por sus palabras, más por sus <span>Reactciones</span> que por sus disfraces, por sus <span>Vuenas</span> intenciones más que por sus errores y por saber mirar desde otro <span>Angular</span> las situaciones.",
+        "visit": "Visitar",
+        "tech": "Technologías",
+        "choose": "Escoge lo que quieres bichear",
+        "all": "Todo",
+        "more": "Más"
     }
 }

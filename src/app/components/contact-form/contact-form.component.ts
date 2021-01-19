@@ -13,7 +13,7 @@ export class ContactFormComponent implements OnInit {
   email: string;
   message: string;
   recaptcha: string;
-  loading: boolean = false;
+  load: boolean = false;
   error: boolean = false;
   @Input() title: string;
   @Input() name: boolean = false;
@@ -36,7 +36,7 @@ export class ContactFormComponent implements OnInit {
   resolved(captcha: string) {}
 
   submit(form: NgForm, recaptcha) {
-    this.loading = true;
+    this.load = true;
     this.error = false;
     if (form.status !== 'INVALID' && recaptcha.valid) {
       return this.http.post('https://formspree.io/f/mwkwerqj', {
@@ -45,17 +45,15 @@ export class ContactFormComponent implements OnInit {
         message: this.message
       },
       {headers: this.addHeader()}).subscribe( r => {
-        console.log(r, 'erre')
-        this.loading = false;
+        this.load = false;
         form.reset();
       }, e => {
-        console.log(e, 'e')
         this.error = true;
-        this.loading = false;
+        this.load = false;
       })
     } else {
       this.error = true;
-      this.loading = false;
+      this.load = false;
       form.reset();
     }
   }

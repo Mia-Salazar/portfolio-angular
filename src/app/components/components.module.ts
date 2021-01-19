@@ -16,6 +16,7 @@ import { ContactFormComponent } from './contact-form/contact-form.component';
 import { BoxComponent } from './box/box.component';
 import { HeadingComponent } from './heading/heading.component';
 import { BarComponent } from './bar/bar.component';
+import { PortfolioItemComponent } from './portfolio-item/portfolio-item.component';
 
 @NgModule({
   declarations: [
@@ -27,6 +28,7 @@ import { BarComponent } from './bar/bar.component';
     BoxComponent,
     HeadingComponent,
     BarComponent,
+    PortfolioItemComponent,
   ],
   imports: [
     CommonModule,
@@ -52,7 +54,8 @@ import { BarComponent } from './bar/bar.component';
     ContactFormComponent,
     BoxComponent,
     HeadingComponent,
-    BarComponent
+    BarComponent,
+    PortfolioItemComponent
   ]
 })
 export class ComponentsModule { }

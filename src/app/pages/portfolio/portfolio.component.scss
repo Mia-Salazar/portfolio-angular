@@ -1,0 +1,76 @@
+@import '../../../assets/stylesheets/application';
+
+.portfolio {
+  &__button {
+    width: 160px;
+    background-color: $white;
+    margin: 8px auto;
+    padding: 14px 0;
+    color: $black;
+    font-weight: bold;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border: none;
+
+    &:first-of-type {
+      @media (min-width: 768px) {
+        margin-left: 0;
+      }
+    }
+
+    &:hover, &--active {
+      background-color: $black;
+      color: $white;
+    }
+
+    @media (min-width: 768px) {
+      width: 104px;
+      margin: 8px;
+      padding: 10px 0;
+    }
+  }
+
+  &__filter-container {
+    display: flex;
+    flex-direction: column;
+    margin: 24px auto 0 auto;
+
+    @media (min-width: 768px) {
+      flex-direction: row;
+      margin: 32px auto 18px auto;
+    }
+  }
+
+  &__link {
+    color:$black;
+
+    &:hover {
+      background-color: $pink;
+      color: $white;
+    }
+  }
+
+  &__list {
+    width: 100%;
+    
+    @media (min-width: 768px) {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      margin: 0;
+    }
+  }
+
+  .button-primary {
+    margin-top: 24px;
+    padding: 14px;
+
+    @media (min-width: 768px) {
+      margin-left: 12px;
+    }
+
+    @media (min-width: 1024px) {
+      margin-left: 18px;
+    }
+  }
+}

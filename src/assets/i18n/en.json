@@ -47,5 +47,14 @@
     "error": {
         "title": "Page not found",
         "subtitle": "It looks like Miss !important is not here right now, shes is saving the world"
+    },
+    "portfolio": {
+        "title": "Portfolio",
+        "subtitle": "A superhero is known more for his actions than for his words, for his <span>Reactions</span> than for his customs, for his <span>Vuood</span> ore than for his mistakes and for knowing how to look at situations from another <span>Angulear</span>.",
+        "visit": "Visit",
+        "tech": "Technologies",
+        "choose": "Choose what you want to filter",
+        "all": "All",
+        "more": "More"
     }
 }
