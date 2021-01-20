@@ -1,27 +1,36 @@
-# PortfolioAngular
+# Portfolio
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.0.3.
+> My personal portfolio made with Angular, Typescript, SASS, BEM, CSS3 and HTML5, 
 
-## Development server
+``` bash
+# install dependencies
+$ npm install
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+# serve with hot reload at localhost:4200
+$ ng serve
 
-## Code scaffolding
+# build
+$ ng build
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+# test
+$ ng test
 
-## Build
+```
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+## Built With
 
-## Running unit tests
+* [Angular](https://github.com/angular//) - The web framework used
+* [SASS](https://sass-lang.com/) - CSS preprocessor
+* [http://getbem.com/](http://getbem.com/) - CSS Methodology
+* [BEM](http://getbem.com/) - CSS Methodology
+* [i18n](https://angular.io/guide/i18n) - Text Internationalization
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+### Authors
 
-## Running end-to-end tests
+* **Mia Salazar** - *Initial work* - [Mia-Salazar](https://github.com/Mia-Salazar)
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+## License
 
-## Further help
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
