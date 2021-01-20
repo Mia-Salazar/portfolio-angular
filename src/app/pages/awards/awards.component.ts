@@ -18,7 +18,9 @@ export class AwardsComponent implements OnInit {
     { title: 'awards.medium', link: 'https://marasalazar.medium.com/c%C3%B3mo-dar-soporte-a-ie-y-no-morir-en-el-intento-7049dcbbf43f', image: '../../../assets/images/ie.png' },
     { title: 'awards.medium', link: 'https://marasalazar.medium.com/to-angular-material-or-not-to-angular-material-940a616ac22d', image: '../../../assets/images/material.png' },
     { title: 'awards.cyber', link: 'https://blog.enthec.com/the-importance-of-maintaining-the-health-of-your-dns/', image: '../../../assets/images/kartos.jpg' },
-    { title: 'awards.cyber', link: 'https://blog.enthec.com/discover-how-to-protect-your-company-from-web-exposition-with-kartos/', image: '../../../assets/images/kartos.jpg' }
+    { title: 'awards.cyber', link: 'https://blog.enthec.com/discover-how-to-protect-your-company-from-web-exposition-with-kartos/', image: '../../../assets/images/kartos.jpg' },
+    { title: 'awards.game', link: 'https://xcjgames.itch.io/treeventure', image: '../../../assets/images/treeventure.jpg' },
+    { title: 'awards.game', link: 'https://xcjgames.itch.io/damng-la-balada-del-capitan', image: '../../../assets/images/damng.jpg' }
   ];
 
   constructor() { }
