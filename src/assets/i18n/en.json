@@ -56,5 +56,14 @@
         "choose": "Choose what you want to filter",
         "all": "All",
         "more": "More"
+    },
+    "awards": {
+        "article": "Paper",
+        "medium": "Medium Article",
+        "cyber": "Cybersecurity article",
+        "story": "Short story award",
+        "subtitle": "Superheroes sacrificed to their cause often receive awards and recognition for their performance",
+        "textOne": "As Miss! Important I look after the welfare of all the peoples of the universe, so I have diverse interests besides my fight against the! Importants and my defense of the good code",
+        "textTwo": "Take a look at my medals and keys to the city with which they have given me, and click on them for more information."
     }
 }

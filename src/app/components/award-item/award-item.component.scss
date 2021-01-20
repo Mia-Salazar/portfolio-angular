@@ -1,0 +1,146 @@
+@import '../../../assets/stylesheets/application';
+
+.award-item{
+	width:150px;
+	height: 150px;
+	position: relative;
+	display:block;
+	margin: 120px auto;
+	padding:0;
+	background-color: $black;
+	text-align:center;
+	transform: rotate(45deg);
+	transition: transform  0.1s cubic-bezier(0, 1.8, 1, 1.8);
+    overflow: hidden;
+    
+	@media (min-width:425px) {
+		width:200px;
+		height: 200px;
+    }
+    
+	@media (min-width: 768px) {
+		width:150px;
+		height: 150px;
+		margin: 50px;
+    }
+    
+	&__link {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		cursor:pointer;
+	}
+    
+	&--0 {
+		@media (min-width:1100px) {
+			position: absolute;
+			left:0;
+			
+		}
+	}
+	
+	&--1 {
+		@media (min-width: 1100px) {
+			position: absolute;
+			left:32.5%;
+		}
+	}
+
+	&--2 {
+		@media (min-width: 1100px) {
+			position: absolute;
+			left:65%;
+		}
+	}
+
+	&--3 {
+		@media (min-width: 1100px) {
+			position: absolute;
+			top: 130px;
+			left: 16%;
+		}
+	}
+
+	&--4 {
+		@media (min-width: 1100px) {
+			position: absolute;
+			top: 130px;
+			left: 49%;
+		}
+	}
+
+	&--5 {
+		@media (min-width: 1100px) {
+			position: absolute;
+			top: 265px;
+			left:0;
+		}
+	}
+
+	&--6 {
+		@media (min-width: 1100px) {
+			position: absolute;
+			top: 265px;
+			left:32.5%;
+		}
+	}
+
+	&--7 {
+		@media (min-width: 1100px) {
+			position: absolute;
+			top: 265px;
+			left:65%;
+		}
+	}
+
+	&--8 {
+		@media (min-width: 1100px) {
+			position: absolute;
+			top: 400px;
+			left: 16%;
+		}
+	}
+
+	&--9 {
+		@media (min-width: 1100px) {
+			position: absolute;
+			top: 400px;
+			left: 49%;
+		}
+	}
+    
+	&__img {
+		display: none;
+    }
+    
+	&:hover {
+		.award-item__img {
+			width: 175%;
+			height: 175%;
+			display: block;
+			position: absolute;
+			top: -25%;
+			left: -25%;
+			z-index: -1;
+			transform: rotate(-45deg);
+        }
+        
+		.award-item__heading {
+			display: none;
+		}
+    }
+    
+	&__heading {
+		height: 100%;
+		position: absolute;
+		top: 50%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin: 0;
+		color:$white;
+		overflow:hidden;
+		transform: translateY(-50%) rotate(-45deg);
+		font-size:18px;
+	}
+}

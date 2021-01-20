@@ -1,17 +1,17 @@
 <app-box class="portfolio">
-    <div class="animation-page">
-        <app-heading text="portfolio.title"></app-heading>
-        <p class="text portfolio__joke" [innerHTML]="'portfolio.subtitle' | translate"></p>
-        <p class="portfolio__text">{{ 'portfolio.choose' | translate }}</p>
-        <div class="portfolio__filter-container">
-          <button class="portfolio__button" [ngClass]="{ 'portfolio__button--active': filteredButton === 'all' }" (click)="filter('all')">{{ 'portfolio.all' | translate }}</button>
-          <button class="portfolio__button" [ngClass]="{ 'portfolio__button--active': filteredButton === 'vue' }" (click)="filter('vue')" >Vue/Nuxt</button>
-          <button class="portfolio__button" [ngClass]="{ 'portfolio__button--active': filteredButton === 'react' }" (click)="filter('react')">React</button>
-          <button class="portfolio__button" [ngClass]="{ 'portfolio__button--active': filteredButton ===  'angular '}" (click)="filter('angular')" >Angular</button>
-        </div>
-        <div class="portfolio__list">
-          <app-portfolio-item *ngFor="let portfolio of filteredPortfolio | slice:0:listLimit" [portfolio]="portfolio"></app-portfolio-item>
-        </div>
-        <button class="button-primary" (click)="loadMore()" *ngIf="filteredPortfolio.length > listLimit ">{{ 'portfolio.more' | translate }}</button>
+  <div class="animation-page">
+    <app-heading text="portfolio.title"></app-heading>
+    <p class="text portfolio__joke" [innerHTML]="'portfolio.subtitle' | translate"></p>
+    <p class="portfolio__text">{{ 'portfolio.choose' | translate }}</p>
+    <div class="portfolio__filter-container">
+      <button class="portfolio__button" [ngClass]="{ 'portfolio__button--active': filteredButton === 'all' }" (click)="filter('all')">{{ 'portfolio.all' | translate }}</button>
+      <button class="portfolio__button" [ngClass]="{ 'portfolio__button--active': filteredButton === 'vue' }" (click)="filter('vue')" >Vue/Nuxt</button>
+      <button class="portfolio__button" [ngClass]="{ 'portfolio__button--active': filteredButton === 'react' }" (click)="filter('react')">React</button>
+      <button class="portfolio__button" [ngClass]="{ 'portfolio__button--active': filteredButton ===  'angular '}" (click)="filter('angular')" >Angular</button>
     </div>
+    <div class="portfolio__list">
+      <app-portfolio-item *ngFor="let portfolio of filteredPortfolio | slice:0:listLimit" [portfolio]="portfolio"></app-portfolio-item>
+    </div>
+    <button class="button-primary" (click)="loadMore()" *ngIf="filteredPortfolio.length > listLimit ">{{ 'portfolio.more' | translate }}</button>
+  </div>
 </app-box>

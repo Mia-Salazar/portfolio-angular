@@ -1,0 +1,64 @@
+@import '../../../assets/stylesheets/application';
+
+.awards {
+  &__list {
+    @media (min-width: 768px) {
+      max-width: 749px;
+      position: relative;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin: 125px auto 0 auto;
+    }
+
+    @media(min-width: 1100px) {
+      max-width: 750px;
+      position: relative;
+      margin-top: 24px;
+      padding-bottom: 700px;
+    }
+  }
+
+  &__container {
+    @media (min-width: 992px) {
+      display: flex;
+    }
+  }
+
+  &__text-container {
+    @media (min-width: 992px) {
+      width: 65%
+    }
+
+    @media (min-width: 1200px) {
+      width: 60%
+    }
+  }
+
+  &__img-container {
+    display: none;
+
+    @media (min-width: 992px) {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      width: 35%;
+    }
+
+    @media (min-width: 1200px) {
+      width: 40%;
+    }
+  }
+
+  &__img {
+    @media (min-width: 375px) {
+      display: flex;
+      margin: 0 auto;
+      max-width: 300px;
+    }
+    
+    @media (min-width: 1100px) {
+      max-width: 200px;
+    }
+  }
+}

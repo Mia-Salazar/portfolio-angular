@@ -10,6 +10,6 @@ export class AppComponent {
   title = 'portfolio-angular';
 
   constructor(private translate: TranslateService) {
-    translate.setDefaultLang('en');
+    translate.setDefaultLang('es');
 }
 }

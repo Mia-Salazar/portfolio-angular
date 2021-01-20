@@ -1,1 +1,18 @@
-<p>awards works!</p>
+<app-box class="awards">
+  <div class="animation-page">
+    <app-heading text="header.awards"></app-heading>
+    <div class="awards__container">
+        <div class="awards__text-container">
+          <p class="text">{{'awards.subtitle' | translate}}</p>
+          <p class="text">{{'awards.textOne' | translate}}</p>
+          <p class="text">{{'awards.textTwo' | translate}}</p>
+        </div>
+        <figure class="awards__img-container">
+          <img class="awards__img" alt="" src="../../../assets/images/medal.svg" />
+        </figure>
+    </div>
+    <div class="awards__list">
+        <app-award-item *ngFor="let award of awards; let i = index" [index]="i" [award]="award"></app-award-item>
+    </div>
+  </div>
+</app-box>

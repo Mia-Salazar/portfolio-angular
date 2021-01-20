@@ -17,6 +17,7 @@ import { BoxComponent } from './box/box.component';
 import { HeadingComponent } from './heading/heading.component';
 import { BarComponent } from './bar/bar.component';
 import { PortfolioItemComponent } from './portfolio-item/portfolio-item.component';
+import { AwardItemComponent } from './award-item/award-item.component';
 
 @NgModule({
   declarations: [
@@ -29,6 +30,7 @@ import { PortfolioItemComponent } from './portfolio-item/portfolio-item.componen
     HeadingComponent,
     BarComponent,
     PortfolioItemComponent,
+    AwardItemComponent,
   ],
   imports: [
     CommonModule,
@@ -55,7 +57,8 @@ import { PortfolioItemComponent } from './portfolio-item/portfolio-item.componen
     BoxComponent,
     HeadingComponent,
     BarComponent,
-    PortfolioItemComponent
+    PortfolioItemComponent,
+    AwardItemComponent
   ]
 })
 export class ComponentsModule { }

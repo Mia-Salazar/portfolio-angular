@@ -1,6 +1,6 @@
 <header class="header">
 	<div class="header__language-group">
-		<button class="header__language-button" [ngClass]="{'header__language-button--active' : language === 'en'}" (click)="useLanguage('en')">en</button>
+		<button class="header__language-button header__language-button--first" [ngClass]="{'header__language-button--active' : language === 'en'}" (click)="useLanguage('en')">en</button>
 		<button class="header__language-button" [ngClass]="{'header__language-button--active' : language === 'es'}" (click)="useLanguage('es')">es</button>
 	</div>
 	<a class="header__container" attr.aria-label="{{'header.back' | translate}}" href="/">
