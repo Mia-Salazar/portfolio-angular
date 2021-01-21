@@ -10,6 +10,10 @@ export class AppComponent {
   title = 'portfolio-angular';
 
   constructor(private translate: TranslateService) {
-    translate.setDefaultLang('es');
+    if (localStorage.getItem('lang') === 'en') {
+      translate.setDefaultLang('en');
+    } else {
+      translate.setDefaultLang('es');
+    }
   }
 }
