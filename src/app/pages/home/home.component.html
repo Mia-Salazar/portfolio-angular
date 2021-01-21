@@ -9,7 +9,7 @@
         <p class="text">{{ 'home.textTwo' | translate }}</p>
         <button class="home__button" (click)="attack()" >{{ 'home.attack' | translate }}</button>
         <app-bar [number]="number"></app-bar>
-        <p *ngIf="number < 1">¡{{ 'home.thanks' | translate }}</p>
+        <p *ngIf="number < 1">{{ 'home.thanks' | translate }}</p>
         <figure class="home__dinosaur-container" [ngClass]="{'home__dinosaur-container--defeat': number < 1}" [@changeDivSize]=currentState>
             <img alt="" src="../../../assets/images/dinosaur-important.png" class="home__dinosaur home__img" />
         </figure>
