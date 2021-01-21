@@ -7,15 +7,25 @@ import { TranslateService } from '@ngx-translate/core';
   styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent implements OnInit {
-  language: string = 'es';
+  language: string;
 
   constructor(private translate: TranslateService) { }
 
   ngOnInit(): void {
+    this.getLanguage();
   }
 
   useLanguage(language: string) {
+    localStorage.setItem('lang', language);
     this.language = language;
     this.translate.use(language);
+  }
+
+  getLanguage() {
+    if (localStorage.getItem('lang') === 'en') {
+      this.language = 'en';
+    } else  {
+      this.language = 'es';
+    }
   }
 }
