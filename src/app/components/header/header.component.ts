@@ -15,7 +15,6 @@ export class HeaderComponent implements OnInit {
   }
 
   useLanguage(language: string) {
-    console.log(language)
     this.language = language;
     this.translate.use(language);
   }
