@@ -20,7 +20,8 @@ export class AwardsComponent implements OnInit {
     { title: 'awards.cyber', link: 'https://blog.enthec.com/the-importance-of-maintaining-the-health-of-your-dns/', image: '../../../assets/images/kartos.jpg' },
     { title: 'awards.cyber', link: 'https://blog.enthec.com/discover-how-to-protect-your-company-from-web-exposition-with-kartos/', image: '../../../assets/images/kartos.jpg' },
     { title: 'awards.game', link: 'https://xcjgames.itch.io/treeventure', image: '../../../assets/images/treeventure.jpg' },
-    { title: 'awards.game', link: 'https://xcjgames.itch.io/damng-la-balada-del-capitan', image: '../../../assets/images/damng.jpg' }
+    { title: 'awards.game', link: 'https://xcjgames.itch.io/damng-la-balada-del-capitan', image: '../../../assets/images/damng.jpg' },
+    { title: 'awards.interview', link: 'https://www.youtube.com/watch?v=ljT-Zwobxos&feature=emb_title&ab_channel=ITgals', image: '../../../assets/images/itgals.PNG' }
   ];
 
   constructor() { }
