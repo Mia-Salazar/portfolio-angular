@@ -2,7 +2,7 @@
     "home": {
         "hello": "¡Hola!",
         "subtitle": "Soy Mía Salazar, una desarrolladora Front-end developer junior, una apasionada de la maquetación web y una amante del diseño.",
-        "textOne": "Sin embargo, todo esto es una tapadera, ya que en realidad soy la superheroína Miss !important, la persona que lucha contra los !importants y vela por el buen uso del CSS en el mundo y por el código bien optimiado y reutilizable.",
+        "textOne": "Sin embargo, todo esto es una tapadera, ya que en realidad soy la superheroína Miss !important, la persona que lucha contra los !importants y vela por el buen uso del código en el mundo y por el código bien optimizado y reutilizable.",
         "textTwo": "Ayúdame a combatir el mal código.",
         "attack": "¡Ataca!",
         "thanks": "¡Gracias por ayudarme!"
@@ -60,6 +60,7 @@
     "awards": {
         "article": "Artículo científico",
         "medium": "Artículo Medium",
+        "interview": "Entrevista",
         "cyber": "Artículo ciberseguridad",
         "story": "Premio relato breve",
         "subtitle": "Los superhéroes sacrificados a su causa, suelen recibir premios y reconocimientos por su desempeño",

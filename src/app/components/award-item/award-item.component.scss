@@ -124,6 +124,14 @@
 			left: 68%;
 		}
 	}
+
+	&--12 {
+		@media (min-width: 1100px) {
+			position: absolute;
+			top: 535px;
+			left: 34%;
+		}
+	}
     
 	&__img {
 		display: none;
