@@ -11,8 +11,9 @@
           <img class="awards__img" alt="" src="../../../assets/images/medal.svg" />
         </figure>
     </div>
-    <div class="awards__list">
-        <app-award-item *ngFor="let award of awards; let i = index" [index]="i" [award]="award"></app-award-item>
+    <div class="awards__list" [ngClass]="{'awards__list--two-rows': listLimit > 5, 'awards__list--three-rows': listLimit > 10 }">
+        <app-award-item *ngFor="let award of awards | slice:0:listLimit; let i = index" [index]="i" [award]="award"></app-award-item>
     </div>
+    <button class="button-primary awards__button" (click)="loadMore()" *ngIf="awards.length > listLimit ">{{ 'portfolio.more' | translate }}</button>
   </div>
 </app-box>

@@ -24,9 +24,14 @@ export class AwardsComponent implements OnInit {
     { title: 'awards.game', link: 'https://xcjgames.itch.io/treeventure', image: '../../../assets/images/treeventure.jpg' },
     { title: 'awards.game', link: 'https://xcjgames.itch.io/damng-la-balada-del-capitan', image: '../../../assets/images/damng.jpg' },
   ];
+  listLimit = 5;
 
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  loadMore() {
+    this.listLimit += 5;
   }
 }
