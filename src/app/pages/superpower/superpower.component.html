@@ -4,15 +4,12 @@
         <p class="text">{{ 'superpower.subtitle' | translate }}</p>
         <div class="superpower__wrapper">
             <div class="superpower__list">
-                <app-bar title="HTML5" [number]="valueBar(100)"></app-bar>
-                <app-bar title="CSS3, SCSS, SASS" [number]="valueBar(95)"></app-bar>
-                <app-bar title="Accesibilidad" [number]="valueBar(75)"></app-bar>
-                <app-bar title="Responsive Web Design" [number]="valueBar(95)"></app-bar>
-                <app-bar title="Javascript & Typescript" [number]="valueBar(70)"></app-bar>
-                <app-bar title="Vue, React, Angular" [number]="valueBar(70)"></app-bar>
-                <app-bar title="Bootstrap 4, Materialize, Bulma, Angular Material, Tailwind" [number]="valueBar(70)"></app-bar>
-                <app-bar title="Sketch, Photoshop, Illustrator" [number]="valueBar(80)"></app-bar>
-                <app-bar title="Git, github, bitbucket" [number]="valueBar(80)"></app-bar>
+                <app-superpower-item title="HTML5, CSS3, SCSS, SASS, Responsive Web Design" type="very"></app-superpower-item>
+                <app-superpower-item title="Javascript & Typescript" type="medium"></app-superpower-item>
+                <app-superpower-item title="Redux" type="low"></app-superpower-item>
+                <app-superpower-item title="Vue, React, Angular" type="medium"></app-superpower-item>
+                <app-superpower-item title="Bootstrap 4, Materialize, Bulma, Angular Material, Tailwind" type="high"></app-superpower-item>
+                <app-superpower-item title="Accesibility" type="medium"></app-superpower-item>
             </div>
             <figure class="superpower__img-container">
               <img class="superpower__img" [alt]="'superpower.alt' | translate" src="../../../assets/images/gun.svg" />

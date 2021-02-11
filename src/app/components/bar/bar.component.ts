@@ -6,8 +6,8 @@ import { Component, OnInit, Input } from '@angular/core';
   styleUrls: ['./bar.component.scss']
 })
 export class BarComponent implements OnInit {
-  @Input() number: number
-  @Input() title:string
+  @Input() number: number;
+  @Input() title: string;
 
   constructor() { }
 

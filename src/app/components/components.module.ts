@@ -18,6 +18,7 @@ import { HeadingComponent } from './heading/heading.component';
 import { BarComponent } from './bar/bar.component';
 import { PortfolioItemComponent } from './portfolio-item/portfolio-item.component';
 import { AwardItemComponent } from './award-item/award-item.component';
+import { SuperpowerItemComponent } from './superpower-item/superpower-item.component';
 
 @NgModule({
   declarations: [
@@ -31,6 +32,7 @@ import { AwardItemComponent } from './award-item/award-item.component';
     BarComponent,
     PortfolioItemComponent,
     AwardItemComponent,
+    SuperpowerItemComponent,
   ],
   imports: [
     CommonModule,
@@ -58,7 +60,8 @@ import { AwardItemComponent } from './award-item/award-item.component';
     HeadingComponent,
     BarComponent,
     PortfolioItemComponent,
-    AwardItemComponent
+    AwardItemComponent,
+    SuperpowerItemComponent
   ]
 })
 export class ComponentsModule { }

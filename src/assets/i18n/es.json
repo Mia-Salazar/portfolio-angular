@@ -42,7 +42,11 @@
         "korea": "Corea.",
         "bubble": "¿Sabías que soy una de las mayores expertas en propaganda en Corea del Sur y Corea del Norte?",
         "tell": "Cuéntame más",
-        "alt": "Decoración tipo comic"
+        "alt": "Decoración tipo comic",
+        "low": "Bajo",
+        "medium": "Medio",
+        "high": "Alto",
+        "very": "Muy alto"
     },
     "error": {
         "title": "Página no encontrada",

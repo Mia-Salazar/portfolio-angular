@@ -1,0 +1,20 @@
+@import '../../../assets/stylesheets/application';
+
+.superpower-item {
+    margin-bottom: 32px;
+
+    &__container {
+        width: 100px;
+        position: relative;
+    }
+
+    &__type {
+        width: 100%;
+        height: 100%;
+        margin: 0 auto;
+        padding: 10px 0;
+        background-color: $pink;
+        color: $white;
+        text-align: center;
+    }
+}

@@ -42,7 +42,11 @@
         "korea": "Korea.",
         "bubble": "Did you know that I am one of the greatest experts in propaganda in South Korea and North Korea?",
         "tell": "Tell me more",
-        "alt": "Comic style decoration"
+        "alt": "Comic style decoration",
+        "low": "Low",
+        "medium": "Medium",
+        "high": "High",
+        "very": "Very high"
     },
     "error": {
         "title": "Page not found",

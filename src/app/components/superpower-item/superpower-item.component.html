@@ -1,0 +1,9 @@
+<article class="superpower-item">
+    <h3 class="bar__title">{{title}}</h3>
+    <div class="superpower-item__container">
+        <p class="superpower-item__type" *ngIf="type === 'low'">{{ 'superpower.low' | translate }}</p>
+        <p class="superpower-item__type" *ngIf="type === 'medium'">{{ 'superpower.medium' | translate }}</p>
+        <p class="superpower-item__type" *ngIf="type === 'high'">{{ 'superpower.high' | translate }}</p>
+        <p class="superpower-item__type" *ngIf="type === 'very'">{{ 'superpower.very' | translate }}</p>
+    </div>
+</article>
