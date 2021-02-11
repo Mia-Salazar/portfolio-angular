@@ -14,6 +14,7 @@ export class PortfolioComponent implements OnInit {
   filteredPortfolio = [];
   listLimit = 5;
   portfolios = [
+    { link: 'https://github.com/Mia-Salazar/spotiapp', tech:'Angular, Typescript, Tailwind, Redux, API Rest, CSS3, HTML5, SASS, Grid, Flexbox', image: '../../../assets/images/lotr.jpg', clicked: false, angular: true, vue: false, react: false },
     { link: 'https://github.com/Mia-Salazar/spotiapp', tech:'Angular, Typescript, API Rest, CSS3, HTML5, SASS, Grid, Flexbox, Boostrap 4', image: '../../../assets/images/spotiapp.jpg', clicked: false, angular: true, vue: false, react: false },
     { link: 'https://github.com/Mia-Salazar/media-searcher', tech:'Angular, Typescript, API Rest, CSS3, HTML5, SASS, Grid, Flexbox, Boostrap 4, Materialize', image: '../../../assets/images/movie.jpg', clicked: false, angular: true, vue: false, react: false },
     { link: 'https://github.com/Mia-Salazar/youtube-angular', tech:'Angular, Typescript, API Rest, CSS3, HTML5, SASS, Grid, Flexbox, Boostrap 4', image: '../../../assets/images/crusha.jpg', clicked: false, angular: true, vue: false, react: false },
