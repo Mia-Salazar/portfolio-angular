@@ -1,0 +1,36 @@
+@import '../../../assets/stylesheets/application';
+
+.superpower-item {
+    margin-bottom: 32px;
+
+    &__container {
+        position: relative;
+        display: flex;
+    }
+
+    &__type {
+        width: 100%;
+        height: 100%;
+        margin: 0 auto;
+        padding: 10px 0;
+        border: 2px solid black;
+        background-color: $white;
+        color: $black;
+        text-align: center;
+
+        @media (max-width: 767px) {
+            display: none;
+        }
+
+        &--selected {
+            border: 2px solid $pink;
+            background-color: $pink;
+            color: $white;
+
+            @media (max-width: 767px) {
+                display: flex;
+                justify-content: center;
+            }
+        }
+    }
+}
