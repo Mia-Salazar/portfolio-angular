@@ -1,5 +1,4 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { INSPECT_MAX_BYTES } from 'buffer';
 
 @Component({
   selector: 'app-superpower-item',
