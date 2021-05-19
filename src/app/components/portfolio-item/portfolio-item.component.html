@@ -1,5 +1,6 @@
 <article class="portfolio-item">
-    <a class="portfolio-item__image-container" [href]="portfolio.link"  [ngClass]="{ 'portfolio-item__image-container--active': portfolio.clicked }">
+    <a class="portfolio-item__image-container" [href]="portfolio.link" attr.aria-label="{{'header.visit' | translate}}"
+      [ngClass]="{ 'portfolio-item__image-container--active': portfolio.clicked }">
       <img class="portfolio-item__image" [src]="portfolio.image" alt=""/>
       <figcaption class="portfolio-item__tech">{{portfolio.tech}}</figcaption>
     </a>

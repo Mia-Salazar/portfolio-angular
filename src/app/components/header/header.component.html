@@ -3,10 +3,10 @@
 		<button class="header__language-button header__language-button--first" [ngClass]="{'header__language-button--active' : language === 'en'}" (click)="useLanguage('en')">en</button>
 		<button class="header__language-button" [ngClass]="{'header__language-button--active' : language === 'es'}" (click)="useLanguage('es')">es</button>
 	</div>
-	<a class="header__container" attr.aria-label="{{'header.back' | translate}}" href="/">
+	<a class="header__container" attr.aria-label="'header.back' | translate" href="/">
 		<h1 class="header__name"></h1>
 	</a>
-	<a class="header__container" attr.aria-label="{{'header.back' | translate}}" href="/">
+	<a class="header__container" attr.aria-label="'header.back' | translate" href="/">
 		<h2 class="header__name header__surname"></h2>
 	</a>
 	<h3 class="header__subtitle"></h3>

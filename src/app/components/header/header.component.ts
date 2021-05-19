@@ -24,7 +24,7 @@ export class HeaderComponent implements OnInit {
   getLanguage() {
     if (localStorage.getItem('lang') === 'en') {
       this.language = 'en';
-    } else  {
+    } else {
       this.language = 'es';
     }
   }
