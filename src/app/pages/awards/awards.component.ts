@@ -21,6 +21,9 @@ export class AwardsComponent implements OnInit {
     { title: 'awards.cyber', link: 'https://blog.enthec.com/the-importance-of-maintaining-the-health-of-your-dns/', image: '../../../assets/images/kartos.jpg' },
     { title: 'awards.cyber', link: 'https://blog.enthec.com/discover-how-to-protect-your-company-from-web-exposition-with-kartos/', image: '../../../assets/images/kartos.jpg' },
     { title: 'awards.cyber', link: 'https://blog.enthec.com/why-are-data-leaks-dangerous-and-how-to-prevent-them/', image: '../../../assets/images/kartos.jpg' },
+    { title: 'awards.cyber', link: 'https://blog.enthec.com/leaked-credentials-the-importance-of-employees-awareness/', image: '../../../assets/images/kartos.jpg' },
+    { title: 'awards.cyber', link: 'https://blog.enthec.com/5-types-of-phishing-and-how-to-protect-from-them/', image: '../../../assets/images/kartos.jpg' },
+    { title: 'awards.cyber', link: 'https://blog.enthec.com/10-cybersecurity-tips-for-remote-workers/', image: '../../../assets/images/kartos.jpg' },
     { title: 'awards.game', link: 'https://xcjgames.itch.io/treeventure', image: '../../../assets/images/treeventure.jpg' },
     { title: 'awards.game', link: 'https://xcjgames.itch.io/damng-la-balada-del-capitan', image: '../../../assets/images/damng.jpg' },
   ];
