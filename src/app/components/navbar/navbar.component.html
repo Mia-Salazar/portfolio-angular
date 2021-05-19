@@ -1,6 +1,6 @@
 <nav class="nav">
-	<button class="hamburguer" type="button" data-toggle="collapse" data-target="#navbar"
-		aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation"
+	<button class="hamburguer" type="button" data-toggle="collapse" data-target="#navbar" [title]="'header.toggle' | translate"
+		aria-controls="navbar" aria-expanded="false" attr.aria-label="{{'header.toggle' | translate}}"
 		(click)="openMenu()" [ngClass]="{'hamburguer--is-open' : toggle}"
 	>
 		<span class="hamburguer__item" 

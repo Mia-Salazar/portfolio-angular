@@ -5,7 +5,9 @@
         "textOne": "Sin embargo, todo esto es una tapadera, ya que en realidad soy la superheroína Miss !important, la persona que lucha contra los !importants y vela por el buen uso del código en el mundo y por el código bien optimizado y reutilizable.",
         "textTwo": "Ayúdame a combatir el mal código.",
         "attack": "¡Ataca!",
-        "thanks": "¡Gracias por ayudarme!"
+        "thanks": "¡Gracias por ayudarme!",
+        "dinosaur": "Dinosaurio",
+        "city": "Ciudad"
     },
     "contact": {
         "title": "Contáctame",
@@ -29,7 +31,9 @@
         "superpower": "Mis superpoderes",
         "portfolio": "Portfolio",
         "awards": "Premios & artículos",
-        "contact": "Contacto"
+        "contact": "Contacto",
+        "toggle": "Abrir o cerrar navegación",
+        "visit": "Visit this page made by me"
     },
     "superpower": {
         "title": "Superpoderes",

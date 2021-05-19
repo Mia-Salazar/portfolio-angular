@@ -5,7 +5,9 @@
         "textOne": "However, all this is a cover, since in reality I am the superhero Miss! Important, the person who fights against the! Importants and watches over the good use of CSS in the world and the well optimized and reusable code.",
         "textTwo": "Help me fight bad code.",
         "attack": "Attack!",
-        "thanks": "Thanks for helping!"
+        "thanks": "Thanks for helping!",
+        "dinosaur": "Dinosaur",
+        "city": "City"
     },
     "contact": {
         "title": "Contact me",
@@ -22,14 +24,16 @@
     },
     "footer": {
         "follow": "Follow me!",
-        "social": "Follow me on social network"
+        "social": "Follow me on social networks"
     },
     "header": {
         "back": "Go back to home",
         "superpower": "My superpowers",
         "portfolio": "Portfolio",
         "awards": "Awards & articles",
-        "contact": "Contact"
+        "contact": "Contact",
+        "toggle": "Toggle navigation",
+        "visit": "Visitar esta página realizada por mí"
     },
     "superpower": {
         "title": "Superpowers",
